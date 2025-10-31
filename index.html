@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MSECHO Security Services</title>
+  <meta name="description" content="MSECHO Security Services — Your safety first — we watch while you rest. Guarding, Armed Response, Event Management, CCTV, Supervisor.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230b2340'/%3E%3Cpath d='M10 20h44v24L32 54 10 44z' fill='%23d4af37'/%3E%3Cpath d='M22 32l8 8 12-12' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+  <!--
+  README (Quick Start)
+  - How to test locally: Just open index.html in any modern browser (double-click or right-click > Open With). No build step required.
+  - Production deployment: You can host these three files (index.html, styles.css, app.js) on any static hosting (Netlify, GitHub Pages, Vercel, traditional web host). For Netlify, drag-and-drop the folder into the Netlify dashboard. For GitHub Pages, push to a repo and enable Pages.
+  - Forms integration (optional):
+      * Default behavior saves submissions to localStorage (and CV files in IndexedDB). This is demo-only and works offline.
+      * To use Netlify Forms: Add data-netlify="true" to forms and include a hidden input name="form-name". See comments near the forms below.
+      * To use Formspree: Replace the form action with your Formspree endpoint and method="POST"; update the JavaScript to skip local saving.
+  - Security note: The admin panel behind #admin uses only a simple prompt with a hard-coded demo password. It is NOT secure and only intended for demonstration. Replace with a real server and authentication in production.
+  - Customize: Update colors in styles.css under THEME, change demo admin password in app.js, replace the logo/PSiRA placeholders with your assets.
+  -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="MSECHO Security Services Home">
+        <!-- Simple SVG logo placeholder -->
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="10" fill="#0b2340"></rect>
+          <path d="M10 20h44v24L32 54 10 44z" fill="#d4af37"></path>
+          <path d="M22 32l8 8 12-12" stroke="#ffffff" stroke-width="4" fill="none"></path>
+        </svg>
+        <span class="brand-text">MSECHO Security Services</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#admin">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-left">
+          <h1 class="hero-title">Your safety first — we watch while you rest</h1>
+          <p class="hero-subtitle">Professional security solutions: Guarding, Armed Response, Events, CCTV, Supervision.</p>
+          <div class="hero-ctas">
+            <a href="#jobs" class="btn btn-primary" data-scroll>Apply for a job</a>
+            <a href="tel:0646477491" class="btn btn-outline" data-call>Call Us</a>
+            <a href="mailto:msechoprotection@gmail.com" class="btn btn-outline" data-email>Email Us</a>
+          </div>
+          <div class="hero-contact">
+            <span class="contact-item">Phone: 0646477491 / 0785621441 / 0150006703</span>
+            <span class="contact-item">Email: msechoprotection@gmail.com</span>
+            <span class="contact-item">Address: Nkowankowa 1 Bankuna Street Office no. 104</span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- PSiRA accreditation placeholder -->
+          <div class="psira" aria-label="PSiRA accreditation placeholder" title="PSiRA Accreditation">
+            <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <circle cx="32" cy="32" r="30" fill="#0b2340"></circle>
+              <circle cx="32" cy="32" r="24" fill="none" stroke="#d4af37" stroke-width="4"></circle>
+              <text x="32" y="38" text-anchor="middle" font-size="16" fill="#ffffff">PSiRA</text>
+            </svg>
+            <small>Accreditation</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          MSECHO Security Services is a trusted South African security company dedicated to protecting what matters most-your people,your property,and your peace of mind. We provide professional security solutions designed to prevent threats,enusure safety and respond swiftly to emergencies.
+          With a team of well-trained and highly disciplined officers,we take pride in delivering reliable security services across residential,commercial,industrial and event environments.Our approach is based on integrity,vigilance and excellence in every duty we perfom.
+          We believe security is not just about presence-its all about protection,awareness and professionalism.MSECHO Security Services works closely with clients to understand their needs and offer tailor solutions that maintain safety and operational continuity 24/7.
+
+          Our Mission
+          -To create a safe and secure environment for our clients through exceptional protection services and a commitment to service excellence.
+
+          Our vision
+          -To become a leading security provider in South Africa, recognized for our innovation,discipline and customer-focused approach.
+
+          Core Values. 
+
+          Intergrity - We act with honesty,transparency and accountability.
+          professionalism - We perform our duties with respect and care.
+          Reliablity - We are always prepared and Quick to respond.
+          Safety First - protecting people is our highest priority.
+        </p>
+       <p><strong>Director:</strong> NJ Maleyana</p>
+      </div>
+    </section>
+
+    <!-- Gallery section: Team, Uniform, Office -->
+    <section id="gallery" class="section gallery" aria-label="Image Gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p class="microcopy">Here are some of the images of our team, uniform and office</p>
+        <ul class="gallery-grid" role="list">
+          <!-- Team Photos -->
+          <li class="gallery-item">
+            <figure>
+              <img src="images/member.jpg" alt="Team member">
+              <figcaption>Team Member</figcaption>
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure>
+              <img src="images/uniform.jpg" alt="Close-up of security uniform">
+              <figcaption>Team uniform</figcaption>
+            </figure>
+          </li>
+
+          <!-- Uniforms and office-->
+          <li class="gallery-item">
+            <figure>
+              <img src="images/set.jpg" alt="Close-up of security uniform details">
+              <figcaption>Uniform</figcaption>
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure>
+              <img src="images/office.jpg" alt="Office">
+              <figcaption>Office</figcaption>
+            </figure>
+          </li>
+
+          <!-- Vehicles (replace with your uploaded images in /assets/vehicles/) -->
+          <li class="gallery-item">
+            <figure>
+              <img src="images/msecho%20vehicle%201.jpg" alt="MSECHO security vehicle">
+              <figcaption>Vehicle</figcaption>
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure>
+              <img src="images/msecho%20vehicle%202.jpg" alt="MSECHO vehicle side profile with branding">
+              <figcaption>Vehicle</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <ul class="card-grid" role="list">
+          <li class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">🛡️</div>
+            <h3>Guarding</h3>
+            <p>Visible deterrence and access control with trained personnel.</p>
+          </li>
+          <li class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">🚔</div>
+            <h3>Armed Response</h3>
+            <p>Rapid response teams for alarms and emergencies.</p>
+          </li>
+          <li class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">🎤</div>
+            <h3>Event Management</h3>
+            <p>Safe, orderly events with crowd control and VIP protection.</p>
+          </li>
+          <li class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">🎥</div>
+            <h3>CCTV Operator</h3>
+            <p>24/7 monitoring, incident logging, and escalation.</p>
+          </li>
+          <li class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">🧭</div>
+            <h3>Supervisor</h3>
+            <p>On-site leadership, compliance checks, and reporting.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="jobs" class="section jobs">
+      <div class="container">
+        <h2>Open Positions</h2>
+        <ul class="jobs-list" role="list">
+          <li class="job-card">
+            <h3>Security Guard</h3>
+            <p>Provide access control, patrols, and customer-friendly assistance.</p>
+            <button class="btn btn-small btn-primary" data-open-apply data-position="Security Guard">Apply</button>
+          </li>
+          <li class="job-card">
+            <h3>Armed Response Officer</h3>
+            <p>Respond to alarms, assess threats, and coordinate with authorities.</p>
+            <button class="btn btn-small btn-primary" data-open-apply data-position="Armed Response Officer">Apply</button>
+          </li>
+          <li class="job-card">
+            <h3>Event Security</h3>
+            <p>Support event operations, monitor crowds, and ensure safety.</p>
+            <button class="btn btn-small btn-primary" data-open-apply data-position="Event Security">Apply</button>
+          </li>
+          <li class="job-card">
+            <h3>CCTV Operator</h3>
+            <p>Monitor surveillance systems and log incidents accurately.</p>
+            <button class="btn btn-small btn-primary" data-open-apply data-position="CCTV Operator">Apply</button>
+          </li>
+          <li class="job-card">
+            <h3>Supervisor</h3>
+            <p>Lead teams, ensure compliance, and manage shift reports.</p>
+            <button class="btn btn-small btn-primary" data-open-apply data-position="Supervisor">Apply</button>
+          </li>
+        </ul>
+        <div class="jobs-cta">
+          <a href="#apply" class="btn btn-outline" data-scroll>Go to full application form</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Standalone Application Form Section (same form as modal) -->
+    <section id="apply" class="section apply">
+      <div class="container">
+        <h2>Application Form</h2>
+        <!-- For Netlify Forms, you can add data-netlify="true" and a hidden input name="form-name" value="job-application" -->
+        <!-- For Formspree, replace action with your endpoint, keep method="POST", and adjust JS to skip local save. -->
+        <form id="application-form" aria-describedby="privacy-note" novalidate>
+          <div class="form-row">
+            <label for="fullName">Full name <span aria-hidden="true" class="req">*</span></label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+            <span class="error" id="err-fullName" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="email">Email <span aria-hidden="true" class="req">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <span class="error" id="err-email" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone <span aria-hidden="true" class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            <span class="error" id="err-phone" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="position">Position applying for <span aria-hidden="true" class="req">*</span></label>
+            <select id="position" name="position" required>
+              <option value="">Select a position</option>
+              <option>Security Guard</option>
+              <option>Armed Response Officer</option>
+              <option>Event Security</option>
+              <option>CCTV Operator</option>
+              <option>Supervisor</option>
+            </select>
+            <span class="error" id="err-position" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="experience">Years of experience</label>
+            <input id="experience" name="experience" type="number" min="0" step="1" inputmode="numeric">
+            <span class="error" id="err-experience" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="location">Location</label>
+            <input id="location" name="location" type="text" autocomplete="address-level2">
+            <span class="error" id="err-location" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="cv">Upload CV (.pdf, .doc, .docx, max 5MB)</label>
+            <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx">
+            <div class="file-preview" id="cv-preview" aria-live="polite"></div>
+            <span class="error" id="err-cv" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="coverLetter">Cover letter</label>
+            <textarea id="coverLetter" name="coverLetter" rows="5"></textarea>
+            <span class="error" id="err-coverLetter" role="alert"></span>
+          </div>
+          <div class="form-row checkbox-row">
+            <input id="consent" name="consent" type="checkbox" required>
+            <label for="consent">I consent to data processing and background checks. <span aria-hidden="true" class="req">*</span></label>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+          <p id="privacy-note" class="microcopy">We collect your details for recruitment purposes only. Your data is stored locally in your browser for this demo. In production, submissions are processed on secure servers.</p>
+        </form>
+        <div id="application-success" class="success" hidden>
+          <h3>Application submitted</h3>
+          <p>Thank you for applying. A confirmation email has been simulated for demo purposes.</p>
+          <button class="btn btn-outline" data-new-application>Submit another application</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section with small form (front-end only) -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Address:</strong> Nkowankowa 1 Bankuna Street Office no. 104</p>
+            <p><strong>Email:</strong> <a href="mailto:msechoprotection@gmail.com">msechoprotection@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:0646477491">0646477491</a> / <a href="tel:0785621441">0785621441</a> / <a href="tel:0150006703">0150006703</a></p>
+          </div>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="cName">Full name</label>
+              <input id="cName" name="cName" type="text">
+              <span class="error" id="err-cName" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="cEmail">Email</label>
+              <input id="cEmail" name="cEmail" type="email">
+              <span class="error" id="err-cEmail" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" name="cMessage" rows="4"></textarea>
+              <span class="error" id="err-cMessage" role="alert"></span>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+            <p class="microcopy">Front-end only demo. Replace with server endpoint for production messaging.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admin / Submissions view (front-end only, demo) -->
+    <section id="admin" class="section admin" aria-label="Admin Panel">
+      <div class="container">
+        <h2>Admin Panel (Demo)</h2>
+        <p class="microcopy">Demo-only. Uses localStorage/IndexedDB. Replace with secure server & auth in production.</p>
+        <div class="admin-actions">
+          <button class="btn btn-outline" data-admin-login>Login to view submissions</button>
+          <button class="btn btn-ghost" data-export-all disabled>Export All (JSON)</button>
+          <button class="btn btn-ghost" data-clear-all disabled>Delete All</button>
+        </div>
+        <div id="submissions" class="submissions" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>MSECHO Security Services</strong>
+        <p>Your safety first — we watch while you rest</p>
+      </div>
+      <div class="social">
+        <a href="#" aria-label="Facebook" class="social-link" title="Facebook">&#x1F465;</a>
+        <a href="#" aria-label="LinkedIn" class="social-link" title="LinkedIn">in</a>
+        <a href="#" aria-label="Twitter" class="social-link" title="Twitter">X</a>
+      </div>
+      <div class="copy">&copy; <span id="year"></span> MSECHO Security Services. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Application Modal (same fields as standalone) -->
+  <div id="apply-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="applyModalTitle" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="document">
+      <header class="modal-header">
+        <h3 id="applyModalTitle">Apply for a job</h3>
+        <button class="modal-close" aria-label="Close application form" data-close-modal>&times;</button>
+      </header>
+      <div class="modal-body">
+        <!-- Modal form duplicates the standalone form but shares logic in JS -->
+        <form id="application-form-modal" aria-describedby="privacy-note-modal" novalidate>
+          <div class="form-row">
+            <label for="m-fullName">Full name <span aria-hidden="true" class="req">*</span></label>
+            <input id="m-fullName" name="fullName" type="text" autocomplete="name" required>
+            <span class="error" id="m-err-fullName" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="m-email">Email <span aria-hidden="true" class="req">*</span></label>
+            <input id="m-email" name="email" type="email" autocomplete="email" required>
+            <span class="error" id="m-err-email" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="m-phone">Phone <span aria-hidden="true" class="req">*</span></label>
+            <input id="m-phone" name="phone" type="tel" autocomplete="tel" required>
+            <span class="error" id="m-err-phone" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="m-position">Position applying for <span aria-hidden="true" class="req">*</span></label>
+            <select id="m-position" name="position" required>
+              <option value="">Select a position</option>
+              <option>Security Guard</option>
+              <option>Armed Response Officer</option>
+              <option>Event Security</option>
+              <option>CCTV Operator</option>
+              <option>Supervisor</option>
+            </select>
+            <span class="error" id="m-err-position" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="m-experience">Years of experience</label>
+            <input id="m-experience" name="experience" type="number" min="0" step="1" inputmode="numeric">
+            <span class="error" id="m-err-experience" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="m-location">Location</label>
+            <input id="m-location" name="location" type="text" autocomplete="address-level2">
+            <span class="error" id="m-err-location" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="m-cv">Upload CV (.pdf, .doc, .docx, max 5MB)</label>
+            <input id="m-cv" name="cv" type="file" accept=".pdf,.doc,.docx">
+            <div class="file-preview" id="m-cv-preview" aria-live="polite"></div>
+            <span class="error" id="m-err-cv" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <label for="m-coverLetter">Cover letter</label>
+            <textarea id="m-coverLetter" name="coverLetter" rows="5"></textarea>
+            <span class="error" id="m-err-coverLetter" role="alert"></span>
+          </div>
+          <div class="form-row checkbox-row">
+            <input id="m-consent" name="consent" type="checkbox" required>
+            <label for="m-consent">I consent to data processing and background checks. <span aria-hidden="true" class="req">*</span></label>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+            <button type="button" class="btn btn-ghost" data-close-modal>Cancel</button>
+          </div>
+          <p id="privacy-note-modal" class="microcopy">We collect your details for recruitment purposes only. Your data is stored locally in your browser for this demo. In production, submissions are processed on secure servers.</p>
+        </form>
+        <div id="application-success-modal" class="success" hidden>
+          <h3>Application submitted</h3>
+          <p>Thank you for applying. A confirmation email has been simulated for demo purposes.</p>
+          <button class="btn btn-outline" data-new-application>Submit another application</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
